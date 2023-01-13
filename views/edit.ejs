@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/css/home.css">
+    
+    </style>
+</head>
+
+<body>
+
+     <div id="navbar">
+      <h3> <a href="http://localhost:8080/">Home</a></h3>
+      <h3><a href="http://localhost:8080/show">Show</a></h3>
+     </div>
+    <div>
+      <h1>update</h1>
+    </div>
+    <div>
+      <form method="post" action="/edit/<%-students._id %>" class="container">
+        <label for="">Student Name</label>
+        <br>
+        <input type="text" id="name" name="name" value="<%-students.name %>" required>
+       
+        <br>
+        <label for="">Student Email</label>
+        <br>
+        <input type="email" id="mail" name="email" value="<%-students.email %>" required>
+        <br>
+        <label for="">Age</label>
+        <br>
+        <input type="number" id="age" name="age" value="<%-students.age %>" required>
+        <br>
+        <div class="outer">
+          <input class="button" type="submit" value="Update">
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>

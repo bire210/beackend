@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/css/home.css">
+    
+    </style>
+</head>
+
+<body>
+
+     <div id="navbar">
+      <h1> <a href="http://localhost:8080">Home</a></h1>
+      <h1><a href="http://localhost:8080/show">Show</a></h1>
+      <h1><a href="http://localhost:8080/login">Login</a></h1>
+     </div>
+    <div>
+      <h1>Register </h1>
+    </div>
+    <div>
+      <form method="post" action="/add" class="container">
+        <label for="">Student Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+       
+        <br>
+        <label for="">Student Email</label>
+        <br>
+        <input type="email" id="mail" name="email" placeholder="Enter your Email" required>
+        <br>
+        <label for="">Age</label>
+        <br>
+        <input type="number" id="age" name="age" placeholder="Enter your Age" required>
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Make Stromg password" required>
+        <br>
+        <div class="outer">
+          <input class="button" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>

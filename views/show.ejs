@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="css/show.css">
+</head>
+
+<body>
+    <h1 id="heading">All users' data are here</h1>
+    <div id="navbar">
+        <h1><a href="http://localhost:8080/">Home</a></h1>
+        <h1><a href="/show">Show</a></h1>
+    </div>
+    <div>
+
+        <table>
+            <!-- Dont change order of columns -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Control</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Append your output to tbody -->
+                <% students.forEach(element=>{ %>
+                    <tr>
+                        
+                        <td><%- element.name %></td>
+                        <td><%- element.email %></td>
+                        <td><%- element.age %></td>
+                        <td>
+                         <a href="/edit/<%=element._id %>">  <span id="blue">View</span></a>
+
+                         <a href="/delete/<%=element._id %>">  <span id="red">delete</span></a>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
